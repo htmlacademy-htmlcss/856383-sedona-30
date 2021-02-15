@@ -10,15 +10,15 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
+<body class="page-body">
+  <header class="header">
     <nav class="navigation">
-      <a class="navigation-logo" href="/"><img src="" width="138" height="70" alt="Логотип Sedona"></a>
+      <a class="navigation-logo" href="index.html"><img src="" width="138" height="70" alt="Логотип Sedona"></a>
       <ul class="navigation-list">
-        <li class="navigation-item"><a href="#">Информация</a></li>
-        <li class="navigation-item"><a href="#">Фото и видео</a></li>
-        <li class="navigation-item"><a href="#">Карта штата</a></li>
-        <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#">Информация</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#">Фото и видео</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#">Карта штата</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -63,12 +63,12 @@
 
     <section class="breadcrumbs">
       <h2>Результат поиска</h2>
-      <ul>
-        <li>Найдено: 3</li>
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-found">Найдено: 3</li>
         <li>Сортировка:</li>
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По рейтингу</li>
+        <li class="breadcrumbs-price">По цене</li>
+        <li class="breadcrumbs-type">По типу</li>
+        <li class="breadcrumbs-rating">По рейтингу</li>
       </ul>
       <div class="breadcrumbs-link">
         <a href="#"></a>
@@ -82,11 +82,11 @@
       <ul class="list-hotel">
         <li class="list-hotel-item">
           <img src="img/amara resort & spa.jpg" width="135px" height="90px" alt="Amara Resort & Spa">
-          <a href="">Amara Resort & Spa</a>
+          <a class="name-hotel-link" href="#">Amara Resort & Spa</a>
           <p>Гостиница</p>
           <span>От 4000 Р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <a class="detailed-link" href="#">Подробнее</a>
+          <a class="booked-link" href="#">Забронировать</a>
           <b>Рейтинг: 8,5</b>
           <div class="star"></div>
           <div class="star"></div>
@@ -95,11 +95,11 @@
         </li>
         <li class="list-hotel-item">
           <img src="img/desert quail inn.jpg" width="135px" height="90px" alt="Desert Quail Inn">
-          <a href="">Desert Quail Inn</a>
+          <a class="name-hotel-link" href="">Desert Quail Inn</a>
           <p>Мотель</p>
           <span>От 3000 Р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <a class="detailed-link" href="#">Подробнее</a>
+          <a class="booked-link" href="#">Забронировать</a>
           <b>Рейтинг: 8,9</b>
           <div class="star"></div>
           <div class="star"></div>
@@ -107,11 +107,11 @@
         </li>
         <li class="list-hotel-item">
           <img src="img/villas at poco diablo.jpg" width="135px" height="90px" alt="Villas at Poco Diablo">
-          <a href="">Villas at Poco Diablo</a>
+          <a class="name-hotel-link" href="">Villas at Poco Diablo</a>
           <p>Апартаменты</p>
           <span>От 2000 Р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <a class="detailed-link" href="#">Подробнее</a>
+          <a class="booked-link" href="#">Забронировать</a>
           <b>Рейтинг: 9,2</b>
           <div class="star"></div>
           <div class="star"></div>

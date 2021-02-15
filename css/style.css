@@ -1,0 +1,370 @@
+:root {
+  --black: #000000;
+  --grey: #333333;
+  --white: #ffffff;
+  --white-f2f: #F2F2F2;
+  --white-666: #666666;
+  --white-ebe: #EBEBEB;
+  --white-e5e: #E5E5E5;
+  --blue: #81B3D2;
+  --blue-669: #669EC0;
+  --blue-549: #5496BD;
+  --brown: #766357;
+  --brown-eee: #EEEEEE;
+  --brown-a9a: #A9A9A9;
+  --brown-6a6: #6A6A6A;
+  --brown-604: #604E43;
+  --brown-503: #503E33;
+}
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  background-color: var(--white-f2f);
+  background-position: top center;
+}
+
+/*HEADER BLOCK*/
+
+.header {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+  background-color: var(--white);
+  background-position: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.navigation-logo {
+  text-decoration: none;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.navigation-link:hover {
+  color: var(--blue);
+}
+
+.navigation-link:focus {
+  color: var(--black);
+  opacity: 0.3;
+}
+
+.navigation-link:active {
+  color: var(--brown);
+}
+
+/*MAIN BLOCK*/
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background: #FFFFFF;
+  /*box-shadow: 0px 5px 15px var(--black);
+opacity: 0.2;*/
+}
+
+.discription-block strong {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.discription-block p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+.advantages {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+/*.discription-block p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--grey);
+  text-transform: uppercase;
+}*/
+
+/*Удалить?*/
+
+.discription-real-town {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.discription-real-town h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.attributes-city {
+  list-style: none;
+}
+
+/*.attributes-city-item{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--grey);
+  text-transform: uppercase;
+}*/
+
+/*Удалить?*/
+
+.attributes-city-item h4 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.rest-advantages {
+  list-style: none;
+}
+
+.devil-bridge-discription {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.devil-bridge-discription h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.features-item {
+  background-color: var(--brown-eee);
+}
+
+.features-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.interest h2 {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.interest p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+.form-search-hotel {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.form-search-hotel input {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+  border: none;
+}
+
+.form-search-hotel input:hover {
+  background-color: var(--white-ebe);
+  border: none;
+}
+
+/*
+.form-search-hotel input:focus{
+  background-color: var(--white);
+  border: 2px solid var(--white-e5e);
+}*/
+
+/*Не работает фокус*/
+
+.form-search-hotel button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+.search-button {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.search-button:hover {
+  background-color: var(--brown-604);
+}
+
+.search-button:focus {
+  background-color: var(--brown-503);
+  /*opacity: 0.3;  Как задать прозрачностьимено тексту при наведении а не всей кнопке*/
+  outline: none;
+}
+
+.find-button {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+}
+
+.find-button:hover {
+  background-color: var(--blue-669);
+}
+
+.find-button:focus {
+  background-color: var(--blue-549);
+  outline: none;
+}
+
+.button-minus, .button-plus {
+  font-size: 11px;
+  line-height: 11px;
+  background-color: var(--white-f2f);
+  color: var(--brown-a9a);
+}
+
+.button-minus:hover, .button-plus:hover {
+  color: var(--black);
+}
+
+.button-minus:focus, .button-plus:focus {
+  color: var(--blue);
+  outline: none;
+}
+
+/*FOOTER BLOCK*/
+
+.footer {
+  background-color: var(--white);
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.footer-contacts a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.social-list {
+  list-style: none;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+/*CATALOG*/
+
+.form-filter-hotel legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--white);
+}
+.form-filter-hotel label{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--white);
+}
+.breadcrumbs-list{
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--black);
+}
+.breadcrumbs-found{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.breadcrumbs-price{
+  color: var(--blue);
+}
+.breadcrumbs-type,
+.breadcrumbs-rating{
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--blue);
+}
+.list-hotel{
+  list-style: none;
+}
+.list-hotel-item {
+color: var(--black);
+}
+.name-hotel-link{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+  text-decoration: none;
+}
+.detailed-link{
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--blue);
+}
+.booked-link{
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--brown);
+}
+.list-hotel-item p{
+color: var(--grey);
+}
+.list-hotel-item span{
+  color: var(--grey);
+}
+.list-hotel-item b{
+color: var(--white-666);
+background-color: var(--white-f2f);
+}
