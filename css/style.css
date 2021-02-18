@@ -16,7 +16,9 @@
   --brown-05: #604E43;
   --brown-06: #503E33;
 }
-
+.page{
+  height: 100%;
+}
 .page-body {
   margin: 0;
   padding: 0;
@@ -26,6 +28,11 @@
   font-weight: 400;
   background-color: var(--white-f2f);
   background-position: top center;
+
+  /*min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;*/
 }
 
 /*HEADER BLOCK*/
@@ -33,14 +40,14 @@
 .header {
   line-height: 26px;
   font-weight: 700;
-
   background-color: var(--white);
   margin: 0 auto;
   max-width: 1200px;
 }
+
+
 .welcome-block{
   background-image: url(../img/welcome-block-image.jpg);
-
 }
 
 .navigation-logo {
@@ -49,6 +56,9 @@
 
 .navigation-list {
   list-style: none;
+
+ /* display: grid;
+  grid-template-columns:  repeat(4, 1fr);*/
 }
 
 .navigation-link {
@@ -65,7 +75,7 @@
   opacity: 0.3;
 }
 
-.active-hotel:visited {
+.active-link:active {
   color: var(--brown);
 }
 
@@ -252,8 +262,9 @@
   background-color: var(--white);
   color: var(--black);
   text-transform: uppercase;
+  margin: 0 auto;
+max-width: 1200px;
 }
-
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
@@ -320,11 +331,6 @@
   opacity: 1;
   border: none;
  }
-.price-link:visited{
-  color: var(--blue);
-  border: none;
- }
-
 .list-hotel{
   list-style: none;
 }
