@@ -29,9 +29,9 @@
   background-color: var(--white-f2f);
   background-position: top center;
 
- /* min-height: 100%;
+  min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;*/
+  grid-template-rows: min-content 1fr min-content;
 }
 
 /*HEADER BLOCK*/
@@ -39,31 +39,38 @@
 .header {
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
   background-color: var(--white);
   margin: 0 auto;
   max-width: 1200px;
+  box-shadow: 0px 5px 15px var(--black);
 }
 .navigation{
-  /*display: grid;
-  width: 1200px;*/
+  display: grid;
+  grid-template-rows: min-content;
+  width: 1200px;
 }
 .navigation-logo {
   text-decoration: none;
+  position: absolute;
+  left: 45%;
 }
 
 .navigation-list {
   list-style: none;
 
 
-  /*display: grid;
+  display: grid;
   grid-template-columns: repeat(4, max-content);
   justify-content: space-between;
-  padding: 0px;*/
+  padding: 15px 72px 15px 72px;
+  margin: 0px;
 }
 
 .navigation-link {
   text-decoration: none;
   color: var(--black);
+
 }
 
 .navigation-link:hover {
@@ -82,6 +89,14 @@
 /*MAIN BLOCK*/
 .welcome-block{
   background-image: url(../img/welcome-block-image.jpg);
+  width: 1200px;
+  height: 509px;
+  margin: 0px;
+}
+.welcome-block img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container {
   max-width: 1200px;
@@ -90,7 +105,11 @@
   background: var(--white);
   box-shadow: 0px 5px 15px var(--black);
 }
-
+.discription-block{
+  text-align: center;
+  padding-top: 42.5px;
+  padding-bottom: 51px;
+}
 .discription-block strong {
   font-size: 21px;
   line-height: 26px;
@@ -102,6 +121,8 @@
   line-height: 26px;
   color: var(--grey);
   text-transform: uppercase;
+  padding-top: 16px;
+  margin: 0px;
 }
 
 .advantages {
@@ -113,42 +134,125 @@
 }
 .advantages-list{
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 256px 330px 256px 256px;
 }
-
+.real-town{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 256px 330px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
 .discription-real-town {
   background-color: var(--blue);
   color: var(--white);
+
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.real-town img{
+  grid-column: 2/4;
+  grid-row: 1/2 ;
 }
 
 .discription-real-town h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+  padding: 47px 139px 25px 139px;
+  margin: 0px;
 }
-
+.discription-real-town p{
+  margin: 0px;
+  padding: 23px 51px 54px 52px;
+}
+.discription-real-town span{
+  padding: 25px 174px 23px 175px;
+}
 .attributes-city {
   list-style: none;
+
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+.attributes-city-item{
+  text-align: center;
 }
 .attributes-city-item h4 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  color: var(--black);
-}
 
+  margin: 0px;
+  padding-top: 160px;
+  padding-bottom: 25px;
+}
+.attributes-city-item p{
+  margin: 0px;
+  padding-top: 25px;
+  padding-bottom: 82px;
+}
+.devil-bridge{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 256px;
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
 .devil-bridge-discription {
   background-color: var(--blue);
   color: var(--white);
+  text-align: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.devil-bridge-discription img{
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
 
 .devil-bridge-discription h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  margin: 0px;
 }
-
+.devil-bridge-discription p{
+  margin: 0px;
+  padding-top: 23px;
+  padding-bottom: 51px;
+}
+.devil-bridge-discription span{
+  padding-top: 25px;
+  padding-bottom: 23px;
+}
 .features-item {
   background-color: var(--brown-01);
+  text-align: center;
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+
+
+.cell-square{
+  grid-column: 1/2;
+}
+.cell-road{
+  grid-column: 2/3;
+}
+.cell-tourist{
+  grid-column: 3/4;
 }
 
 .features-item h3 {
@@ -156,14 +260,33 @@
   line-height: 21px;
   font-weight: 700;
   color: var(--black);
+  margin: 0px;
+  padding-top: 47px;
+  padding-bottom: 25px;
 }
-
+.features-item p{
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 54px;
+}
+.features-item span{
+  padding-top: 25px;
+  padding-bottom: 23px;
+}
+.interest{
+  width: 1200px;
+  height: 291px;
+  text-align: center;
+}
 .interest h2 {
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
   color: var(--black);
   text-transform: uppercase;
+  margin:0px;
+  padding-top: 58px;
+  padding-bottom: 25px;
 }
 
 .interest p {
@@ -172,14 +295,25 @@
   font-weight: 400;
   color: var(--grey);
   text-transform: uppercase;
+  margin:0px;
+  padding-top: 25px;
+  padding-bottom: 110px;
+}
+.search-hotels{
+position: relative;
 }
 
 .form-search-hotel {
+  position: absolute;
+  left: 316px;
+  top: -86px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: var(--black);
+  background-color: var(--white);
   text-transform: uppercase;
+  width: 568px;
 }
 
 .form-search-hotel input {
@@ -215,6 +349,8 @@
 .search-button {
   background-color: var(--brown);
   color: var(--white);
+  padding: 30px 124px 30px 125px;
+  width: 568px;
 }
 
 .search-button:hover {
@@ -231,6 +367,7 @@
   background-color: var(--blue);
   color: var(--white);
   border: none;
+  padding: 16px 182px 16px 181px;
 }
 
 .find-button:hover {
@@ -247,6 +384,7 @@
   line-height: 11px;
   background-color: var(--white-01);
   color: var(--brown-02);
+  padding: 18px 14px 17px 14px;
 }
 
 .button-minus:hover, .button-plus:hover {
@@ -265,27 +403,40 @@
   color: var(--black);
   text-transform: uppercase;
   margin: 0 auto;
-max-width: 1200px;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  box-shadow: 0px 5px 15px var(--black);
 }
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
-
+.footer-contacts p{
+  margin: 0px;
+  padding: 23px 206px 9px 153px
+}
 .footer-contacts a {
   text-decoration: none;
   color: var(--black);
+  padding: 9px 163px 36px 111px;
 }
 
 .social-list {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer-copyright {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+}
+.footer-copyright p{
+  margin: 0px;
 }
 
 /*CATALOG*/
