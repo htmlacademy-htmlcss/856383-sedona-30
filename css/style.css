@@ -602,7 +602,25 @@
   align-self: end;
   justify-self: end;
 }
-
+.booked-link:hover{
+  background-color: var(--brown-05);
+}
+.booked-link:focus{
+  background-color: var(--brown-05);
+}
+.booked-link:active{
+  background-color: var(--brown-06);
+}
+.detailed-link:hover{
+  background-color: var(--blue-01);
+}
+.detailed-link:focus{
+  background-color: var(--blue-01);
+}
+.detailed-link:active{
+  background-color: var(--blue-02);
+  opacity: 0.3;
+}
 .name-hotel-link {
   font-size: 21px;
   line-height: 26px;
