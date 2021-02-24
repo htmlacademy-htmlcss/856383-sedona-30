@@ -5,7 +5,7 @@
   --white-01: #F2F2F2;
   --white-02: #666666;
   --white-03: #EBEBEB;
-  --white-04: #cccccc;
+  --white-04: rgba(0, 1, 1, 0.2);
   --blue: #81B3D2;
   --blue-01: #669EC0;
   --blue-02: #5496BD;
@@ -29,6 +29,7 @@
   background: var(--white);
   box-shadow: 0px 5px 15px var(--white-04);
 }
+
 .page-body {
   margin: 0;
   padding: 0;
@@ -69,8 +70,8 @@
 }
 
 .navigation {
-  display: grid;
-  grid-template-rows: min-content;
+  /* display: grid;
+  grid-template-rows: min-content;*/
   width: 1200px;
 }
 
@@ -83,11 +84,22 @@
 
 .navigation-list {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, max-content);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  /*display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: space-between;*/
   padding: 15px 72px 15px 72px;
   margin: 0px;
+}
+
+.navigation-item:nth-child(2) {
+  margin-right: 134px;
+}
+
+.navigation-item:nth-child(3) {
+  margin-left: 147px;
 }
 
 .navigation-link {
@@ -111,30 +123,24 @@
 /*MAIN BLOCK*/
 
 .welcome-block {
-  background-image:
-  url(../img/decor-welcome-block.svg),
-  url(../img/welcome-block-image.jpg);
+  background-image: url(../img/decor-welcome-block.svg), url(../img/welcome-block-image.jpg);
   background-repeat: no-repeat;
   background-size: contain, cover;
   background-position: 0% 100%;
   min-height: 509px;
   margin: 0px;
-
 }
 
 .welcome-block img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 77px;
+  margin-top: 77px;
 }
-
-
 
 .discription-block {
   text-align: center;
-  padding-top: 42.5px;
-  padding-bottom: 51px;
+  margin: 42px 341px 51px 341px;
 }
 
 .discription-block strong {
@@ -213,7 +219,6 @@
   font-weight: 700;
   margin: 0px;
   padding-top: 160px;
-  padding-bottom: 25px;
 }
 
 .attributes-city-item p {
@@ -226,7 +231,6 @@
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-column: 1/-1;
-
 }
 
 .devil-bridge-discription {
@@ -266,7 +270,6 @@
   text-align: center;
 }
 
-
 .features-item h3 {
   font-size: 21px;
   line-height: 21px;
@@ -301,7 +304,6 @@
   color: var(--black);
   margin: 0px;
   padding-top: 58px;
-  padding-bottom: 25px;
 }
 
 .interest p {
@@ -342,14 +344,6 @@
   border: none;
 }
 
-/*
-.form-search-hotel input:focus{
-  background-color: var(--white);
-  border: 2px solid var(--white-e5e);
-}*/
-
-/*Не работает фокус*/
-
 .form-search-hotel button {
   font-size: 21px;
   line-height: 26px;
@@ -371,7 +365,6 @@
 
 .search-button:focus {
   background-color: var(--brown-06);
-  /*opacity: 0.3;  Как задать прозрачностьимено тексту при наведении а не всей кнопке*/
   outline: none;
 }
 
@@ -412,13 +405,15 @@
 
 .footer {
   background-color: var(--white);
-  color: var(--black);
   margin: 0 auto;
   width: 1200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*display: grid;
+  grid-template-columns: 1fr 1fr 1fr;*/
   text-align: center;
-  box-shadow: 0px 5px 15px var(--white-04);
 }
 
 .footer-contacts {
@@ -429,7 +424,7 @@
 
 .footer-contacts p {
   margin: 0px;
-  padding: 23px 206px 9px 153px
+  padding: 23px 206px 0px 153px
 }
 
 .footer-contacts a {
@@ -440,12 +435,24 @@
 }
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0 190px 0 0;
+}
+
+.social-item {
+  width: 46px;
+  height: 48px;
+  background-color: var(--blue);
+  margin: 0 6px 0 0;
 }
 
 .footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -453,6 +460,11 @@
 
 .footer-copyright p {
   margin: 0px;
+  padding: 49px 8px 45px 0;
+}
+
+.footer-copyright a {
+  padding: 38px 138px 41px 0;
 }
 
 /*CATALOG*/
@@ -480,11 +492,15 @@
 
 .sorting {
   list-style: none;
+  height: 100%;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  display: grid;
-  grid-template-columns: max-content max-content 1fr max-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  /*display: grid;
+  grid-template-columns: max-content max-content 1fr max-content;*/
 }
 
 .sorting-found {
@@ -495,44 +511,46 @@
 
 .sorting p {
   margin: 0px;
-  padding-top: 31px;
-  padding-bottom: 37px;
-  padding-right: 40px;
 }
 
 .sorting-list {
   list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: max-content max-content max-content;
-  gap: 30px;
-  align-items: center;
+  margin: 0;
+  min-width: 240px;
+  display: flex;
+  justify-content: space-between;
+  /* display: grid; */
+  /* grid-template-columns: max-content max-content max-content; */
+  /* gap: 30px; */
+  /* align-items: center; */
 }
 
-.sorting-item a {
+.sorting-link {
   color: var(--black);
   text-decoration: none;
   opacity: 0.3;
   border-bottom: 1px dashed var(--blue);
 }
 
-.sorting-item a:hover {
+.sorting-link:hover {
   color: var(--blue);
   border-bottom: 1px dashed var(--blue);
 }
 
-.sorting-item a:active {
+.sorting-link:active {
   color: var(--black);
   opacity: 1;
   border: none;
 }
 
-.sorting-item a:focus {
+.sorting-link:focus {
   color: var(--black);
   opacity: 1;
   border: none;
 }
-
+.sorting-link-button{
+  padding-left: 503px;
+}
 .list-hotel {
   list-style: none;
   width: 1200px;
@@ -551,32 +569,31 @@
 .discription-hotel {
   padding-left: 29px;
   display: grid;
-  grid-template-areas: "a a" "p s" "d b";
+  grid-template-areas: "name name" "paragraph price" "detailed booked";
+ gap: 7px;
 }
 
+
 .name-hotel-link {
-  grid-area: a;
+  grid-area: name;
 }
 
 .paragraph {
-  padding-top: 7px;
-  padding-bottom: 10px;
   margin: 0;
-  grid-area: p;
+  grid-area: paragraph;
 }
 
 .price {
-  padding-top: 7px;
-  padding-bottom: 10px;
-  grid-area: s;
+
+  grid-area: price;
 }
 
 .detailed-link {
-  grid-area: d;
+  grid-area: detailed;
 }
 
 .booked-link {
-  grid-area: b;
+  grid-area: booked;
 }
 
 .rating {
@@ -622,7 +639,6 @@
   text-decoration: none;
   background-color: var(--blue);
   padding: 3px 16px 3px 17px;
-  margin-right: 6px;
 }
 
 .booked-link {
