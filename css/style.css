@@ -370,8 +370,30 @@
 .wrapper-form-data input {
   min-width: 346px;
   min-height: 38px;
+  padding-left: 13px;
 }
-.form-data-calendar{}
+
+.form-button-arrival {
+  position: absolute;
+  width: 21px;
+  height: 23px;
+  background-image: url(../img/calendar.svg);
+  left: 483px;
+  bottom: 320px;
+
+}
+
+
+
+.form-button-departure {
+  position: absolute;
+  width: 21px;
+  height: 23px;
+  background-image: url(../img/calendar.svg);
+  left: 483px;
+  bottom: 250px;
+}
+
 .wrapper-form-data {
   display: flex;
   justify-content: space-between;
@@ -393,7 +415,7 @@
 }
 
 .wrapper-form-age label {
-  padding-right: 37px;
+  padding-right: 24px;
 }
 
 .wrapper-form-age {
@@ -670,13 +692,15 @@
   margin-left: auto;
   margin-right: 73px;
 }
-.sorting-link-button a:hover path,
-.sorting-link-button a:focus path{
-fill: var(--black);
+
+.sorting-link-button a:hover path, .sorting-link-button a:focus path {
+  fill: var(--black);
 }
-.sorting-link-button a:active path{
+
+.sorting-link-button a:active path {
   fill: var(--blue);
-  }
+}
+
 .list-hotel {
   list-style: none;
   width: 1200px;
@@ -722,12 +746,13 @@ fill: var(--black);
 }
 
 .rating {
- display: flex;
- flex-wrap: wrap;
- flex-direction: column-reverse;
- justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 }
-.star{
+
+.star {
   background-image: url(../img/star.svg);
   background-repeat: repeat;
   background-position: 100% 0%;
@@ -736,7 +761,8 @@ fill: var(--black);
   margin: 0px;
   align-self: flex-end;
 }
-.list-hotel-item:nth-child(2) .star{
+
+.list-hotel-item:nth-child(2) .star {
   background-image: url(../img/star.svg);
   background-repeat: repeat;
   background-position: 100% 0%;
@@ -745,7 +771,8 @@ fill: var(--black);
   margin: 0px;
   align-self: flex-end;
 }
-.list-hotel-item:nth-child(3) .star{
+
+.list-hotel-item:nth-child(3) .star {
   background-image: url(../img/star.svg);
   background-repeat: repeat;
   background-position: 100% 0%;
@@ -754,6 +781,7 @@ fill: var(--black);
   margin: 0px;
   align-self: flex-end;
 }
+
 .rating b {
   text-align: center;
   color: var(--brown-04);
@@ -762,6 +790,7 @@ fill: var(--black);
   width: 110px;
   align-self: flex-end;
 }
+
 .booked-link:hover {
   background-color: var(--brown-05);
 }
@@ -823,5 +852,5 @@ fill: var(--black);
   color: var(--brown-04);
   background-color: var(--white-01);
   padding: 3px 0 3px 0;
-width: 110px;
+  width: 110px;
 }
